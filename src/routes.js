@@ -13,6 +13,7 @@ const Routes = (props) => (
   <Router>
     <Switch>
       <Route path="/" exact component={App}/>
+      <Route path="/:name" component={App}/>
       <Route path="/about" component={About}/>
       <Route component={NotFound}/>
     </Switch>

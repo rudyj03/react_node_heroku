@@ -13,11 +13,28 @@ class App extends Component {
           <img src={darn} className="App-Darn" alt="darn" />
           <h2>Hello</h2>
         </div>
-        <p className="App-intro">
-          <h1> Shal, I have too much time on my hands. </h1>
-        </p>
+        <AppChild name={this.props.match.params.name}/>
       </div>
     );
+  }
+}
+
+class AppChild extends Component {
+  render(){
+    if(this.props.name){
+      return(
+        <p className="App-intro">
+          <h1> {this.props.name}, you don't really suck, I have too much time on my hands. </h1>
+        </p>
+      );
+    }
+    else {
+      return(
+        <p className="App-intro">
+          <h1> No one sucks, I just have too much time on my hands. </h1>
+        </p>
+      );
+    }
   }
 }
 
