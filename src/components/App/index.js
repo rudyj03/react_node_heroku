@@ -6,11 +6,12 @@ import './style.css';
 class App extends Component {
   render() {
     return (
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>,
       <div className="App">
-        <div className="App-header">
+        <div className="jumbotron">
           <img src={logo} className="App-logo" alt="logo" />
           <img src={darn} className="App-Darn" alt="darn" />
-          <h2>Welcome to React</h2>
+          <h2>Hello</h2>
         </div>
         <p className="App-intro">
           <h1> Shal, I have too much time on my hands. </h1>
